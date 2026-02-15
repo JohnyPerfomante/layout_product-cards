@@ -1,3 +1,7 @@
+@import './variables';
+@import './blocks/card';
+@import './blocks/stars';
+
 /* ===== Reset ===== */
 * {
   box-sizing: border-box;
@@ -13,114 +17,4 @@ body {
   // display: flex;
   // justify-content: center;
   padding: 40px;
-}
-
-/* ===== Card ===== */
-.card {
-  width: 200px;
-  border: 1px solid #f1f1f1;
-  padding: 32px 16px 16px;
-  display: flex;
-  flex-direction: column;
-
-  &__image {
-    height: 134px;
-    width: 166px;
-    object-fit: contain;
-    margin-bottom: 40px;
-    display: block;
-  }
-
-  &__title {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #060b35;
-    margin: 0;
-    margin-bottom: 4px;
-  }
-
-  &__stars {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 24px;
-  }
-
-  &__code {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
-    color: #616070;
-    margin: 0;
-    margin-bottom: 16px;
-  }
-
-  &__reviews {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 13px;
-    font-size: 10px;
-  }
-
-  &__price {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 16px;
-
-    &-label {
-      font-size: 12px;
-      color: #616070;
-    }
-
-    &-value {
-      font-weight: 700;
-      font-size: 16px;
-    }
-  }
-
-  &__buy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 166px;
-    height: 40px;
-    padding: 10px 0;
-    text-align: center;
-    background-color: #00acdc;
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 700;
-    line-height: 16px;
-    font-size: 14px;
-    text-decoration: none;
-
-    &:hover {
-      background-color: #fff;
-      color: #00acdc;
-      border: 1px solid #00acdc;
-    }
-  }
-}
-
-/* ===== Stars ===== */
-.stars {
-  display: flex;
-  gap: 4px;
-
-  &__star {
-    width: 16px;
-    height: 16px;
-    background-image: url('../images/star.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-
-    &--active {
-      background-image: url('../images/star-active.svg');
-    }
-  }
 }
