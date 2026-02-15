@@ -39,7 +39,6 @@
   }
 
   &__reviews {
-    margin-left: 13px;
     font-size: 10px;
   }
 
@@ -69,6 +68,7 @@
     height: 40px;
     background-color: $color-primary;
     color: $color-white;
+    border: 1px solid transparent;
     border-radius: $radius;
     font-size: $font-md;
     line-height: 16px;
